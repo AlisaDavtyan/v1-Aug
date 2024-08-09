@@ -77,12 +77,12 @@ def main():
             sources = response["source_documents"]
             
             st.write(answer)
-            # if sources:
-            #     st.write("Sources:")
-            #     for source in sources:
-            #         st.write(source)
-            # else:
-            #     st.write("No sources found")
+            if sources:
+                st.write("Sources:")
+                for source in sources:
+                    st.write(source)
+            else:
+                st.write("No sources found")
 
 if __name__ == "__main__":
     main()
